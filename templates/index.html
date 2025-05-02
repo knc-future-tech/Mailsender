@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulk Mail Sender</title>
+</head>
+<body>
+    <h2>Upload Excel File to Send Bulk Email</h2>
+    <form action="/send" method="post" enctype="multipart/form-data">
+        <label>Select Excel File (.xlsx):</label><br>
+        <input type="file" name="file" accept=".xlsx" required><br><br>
+        <button type="submit">Send Mail</button>
+    </form>
+    <br>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>
