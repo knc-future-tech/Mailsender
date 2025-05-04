@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect
 import pandas as pd
 from email_sender import send_bulk_email
+import os  # ✅ Added to read PORT from environment
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key'  # required for flashing messages
@@ -37,4 +38,5 @@ def send():
     return redirect('/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # ✅ Default to 5000 if PORT not set
+    app.run(debug=False, host='0.0.0.0', port=port)  # ✅ Bind to 0.0.0.0 for Render
