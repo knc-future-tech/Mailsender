@@ -4,7 +4,7 @@ Dear Sir,
 
 I hope you're doing well.
 
-My name is Chintan, and I’m with KnC Future Tech. I wanted to briefly reach out in case you’re looking for assistance with web development, mobile apps, or software systems.
+My name is Chirag, and I’m with KnC Future Tech. I wanted to briefly reach out in case you’re looking for assistance with web development, mobile apps, or software systems.
 Whether you're building something new or revisiting an existing solution, our team can help make it more reliable, efficient, and aligned with your business needs.
 
 Here are a few examples of recent projects:
@@ -28,5 +28,5 @@ If this is something you'd like to explore, I’d be happy to learn about your c
 Thank you for your time.
 
 Best regards,
-Chintan
+Chirag
 KnC Future Tech
